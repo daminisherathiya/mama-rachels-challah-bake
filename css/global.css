@@ -60,6 +60,14 @@ a {
   font-weight: 500;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.border-orange {
+  border-color: var(--color-orange) !important;
+}
+
 .button-blue {
   background-color: var(--color-blue);
   color: var(--color-white);

@@ -87,17 +87,80 @@
               <div class="registration-form-container">
                 <div class="progress-steps">
                   <div class="step-connector"></div>
-                  <div class="step active">
-                    <span class="step-text">PERSONAL INFO</span>
+                  <div id="id-step-1-tab" class="step active">
+                    <span class="step-text cursor-pointer" onclick="handleTabClick('step1')">NAME TO BE MISPALLEL</span>
                   </div>
-                  <div class="step">
-                    <span class="step-text">NAME TO BE MISPALLEL</span>
+                  <div id="id-step-2-tab" class="step">
+                    <span class="step-text cursor-pointer" onclick="handleTabClick('step2')">PERSONAL INFO</span>
                   </div>
-                  <div class="step">
-                    <span class="step-text">BILLING INFO</span>
+                  <div id="id-step-3-tab" class="step">
+                    <span class="step-text cursor-pointer" onclick="handleTabClick('step3')">BILLING INFO</span>
                   </div>
                 </div>
-                <div id="id-step-1" class="registration-form-content">
+
+                <div id="id-step-1-content" class="registration-form-content">
+                  <form>
+                    <div class="row">
+                      <div id="id-person-list-container" class="col-12">
+                        <div class="person-container row align-items-center">
+                          <div class="col-12">
+                            <div class="input-margine">
+                              <input type="text" class="form-control border-0 shadow-none text-center" id="english-name"
+                                aria-describedby="english-name-help" placeholder="Yitzchok Ben Avrohom / צחק בן אברהם">
+                            </div>
+                          </div>
+                          <div class="col-9">
+                            <div class="input-margine">
+                              <select class="form-select border-0 shadow-none" aria-label="Default select example">
+                                <option selected>Tefilah</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="input-margine">
+                              <div class="form-check d-flex align-items-center">
+                                <label class="form-check-label d-flex align-items-center notify-me-label">
+                                  <input class="form-check-input shadow-none" type="checkbox"
+                                    name="notify-me">
+                                  <span class="ms-3">Notify the ???</span>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="notify-me-details d-none">
+                              <div class="input-margine">
+                                <input type="text" class="form-control border-0" id="name" aria-describedby="name-help"
+                                  placeholder="Name">
+                              </div>
+                              <div class="input-margine">
+                                <input type="text" class="form-control border-0 shadow-none" id="email"
+                                  aria-describedby="email-help" placeholder="Email">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <div class="d-flex justify-content-between align-items-end">
+                          <p class="registration-form-price">$180</p>
+                          <div class="d-flex align-items-center gap-3">
+                            <button id="id-add-name-button" class="btn add-name-button button-peach shadow-none"><img
+                                src="images/plus-circle.svg" alt="plus-circle" class="img-fluid me-3">Add Name
+                              +$50</button>
+                            <button class="btn button-blue next-button shadow-none" type="button"
+                              id="id-step-1-next-button">Next</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div id="id-step-2-content" class="registration-form-content d-none">
                   <form>
                     <div class="row">
                       <div class="col-6">
@@ -121,57 +184,19 @@
                       <div class="col-12">
                         <div class="d-flex justify-content-between align-items-end">
                           <p class="registration-form-price">$180</p>
-                          <button class="btn button-blue next-button shadow-none" type="button" id="id-next-step-1">Next</button>
+                          <button class="btn button-blue next-button shadow-none" type="button"
+                            id="id-step-2-next-button">Next</button>
                         </div>
                       </div>
                     </div>
                   </form>
                 </div>
-                <div id="id-step-2" class="registration-form-content d-none">
-                  <form>
-                    <div class="row align-items-center">
-                      <div class="col-12">
-                        <div class="input-margine input-group">
-                          <input type="text" class="form-control border-0 shadow-none" id="english-name"
-                            aria-describedby="english-name-help" placeholder="Yitzchok Ben Avrohom">
-                          <input type="text" class="form-control border-0 shadow-none text-end" id="hebrew-name"
-                          aria-describedby="hebrew-name-help" placeholder="יצחק בן אברהם">
-                        </div>
-                      </div>
-                      <div class="col-9">
-                        <div class="input-margine">
-                          <select class="form-select border-0 shadow-none" aria-label="Default select example">
-                            <option selected>Tefilah</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="input-margine">
-                          <div class="form-check d-flex align-items-center">
-                            <input class="form-check-input shadow-none" type="checkbox" name="flexRadioDefault"
-                              id="flexRadioDefault1">
-                            <label class="form-check-label ms-3" for="flexRadioDefault1">
-                              Notify the ???
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="d-flex justify-content-between align-items-end">
-                          <p class="registration-form-price">$180</p>
-                          <div class="d-flex align-items-center gap-3">
-                            <button class="btn add-name-button button-peach shadow-none"><img
-                                src="images/plus-circle.svg" alt="plus-circle" class="img-fluid me-3">Add Name
-                              +$50</button>
-                            <button class="btn button-blue next-button shadow-none" type="button">Next</button>
-                          </div>
-                        </div>
-                      </div>
+                <div id="id-step-3-content" class="registration-form-content d-none">
+                  <div class="row">
+                    <div class="col-12">
+                      <p>Billing info</p>
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -276,7 +301,8 @@
           <div class="col-12">
             <h2>Upcoming Events</h2>
             <div class="swiper-container-wrapper">
-              <div class="swiper-button-prev"><img src="images/left-swiper-arrow.svg" alt="arrow-left" class="img-fluid"></div>
+              <div class="swiper-button-prev"><img src="images/left-swiper-arrow.svg" alt="arrow-left"
+                  class="img-fluid"></div>
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -345,7 +371,8 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next"><img src="images/right-swiper-arrow.svg" alt="arrow-right" class="img-fluid"></div>
+              <div class="swiper-button-next"><img src="images/right-swiper-arrow.svg" alt="arrow-right"
+                  class="img-fluid"></div>
             </div>
           </div>
         </div>
@@ -373,14 +400,95 @@
   </script>
 
   <script>
-    const step1 = document.getElementById('id-step-1');
-    const step2 = document.getElementById('id-step-2');
-    const nextStep1 = document.getElementById('id-next-step-1');
+    const step1Tab = document.getElementById("id-step-1-tab");
+    const step2Tab = document.getElementById("id-step-2-tab");
+    const step3Tab = document.getElementById("id-step-3-tab");
 
-    nextStep1.addEventListener('click', (e) => {
+    const step1Content = document.getElementById("id-step-1-content");
+    const step2Content = document.getElementById("id-step-2-content");
+    const step3Content = document.getElementById("id-step-3-content");
+
+    const step1NextButton = document.getElementById("id-step-1-next-button");
+    const step2NextButton = document.getElementById("id-step-2-next-button");
+
+    function goToStep(step) {
+      step1Tab.classList.remove("active");
+      step2Tab.classList.remove("active");
+      step3Tab.classList.remove("active");
+
+      step1Content.classList.add("d-none");
+      step2Content.classList.add("d-none");
+      step3Content.classList.add("d-none");
+
+      switch (step) {
+        case "step1":
+          step1Tab.classList.add("active");
+          step1Content.classList.remove("d-none");
+          break;
+        case "step2":
+          step2Tab.classList.add("active");
+          step2Content.classList.remove("d-none");
+          break;
+        case "step3":
+          step3Tab.classList.add("active");
+          step3Content.classList.remove("d-none");
+          break;
+      }
+    }
+
+    function handleTabClick(tab) {
+      if (tab === "step1" && (step2Tab.classList.contains("active") || step3Tab.classList.contains("active"))) {
+        goToStep("step1");
+      } else if (tab === "step2" && step3Tab.classList.contains("active")) {
+        goToStep("step2");
+      }
+    }
+
+    step1NextButton.addEventListener("click", (e) => {
       e.preventDefault();
-      step1.classList.add('d-none');
-      step2.classList.remove('d-none');
+      goToStep("step2");
+    });
+
+    step2NextButton.addEventListener("click", (e) => {
+      e.preventDefault();
+      goToStep("step3");
+    });
+  </script>
+
+  <script>
+    function handleNotifyMe(e) {
+      const personContainer = e.target.closest(".person-container");
+      const notifyMeDetails = personContainer.querySelector(".notify-me-details");
+      const notifyMeCheckbox = personContainer.querySelector("input[name='notify-me']");
+
+      if (notifyMeCheckbox.checked) {
+        notifyMeDetails.classList.remove("d-none");
+      } else {
+        notifyMeDetails.classList.add("d-none");
+      }
+    }
+
+    const notifyMeLabel = document.querySelector(".notify-me-label");
+    notifyMeLabel.addEventListener("click", handleNotifyMe);
+
+    const personListContainer = document.getElementById("id-person-list-container");
+    const addNameButton = document.getElementById("id-add-name-button");
+    addNameButton.addEventListener("click", (e) => {
+      e.preventDefault();
+      const personContainer = document.querySelector(".person-container");
+      const newPersonContainer = personContainer.cloneNode(true);
+
+      const borderTop = document.createElement("div");
+      borderTop.classList.add("col-12");
+      const borderTopInnerDiv = document.createElement("div");
+      borderTopInnerDiv.classList.add("border-top", "border-orange", "pt-4");
+      borderTop.appendChild(borderTopInnerDiv);
+      
+      newPersonContainer.prepend(borderTop);
+
+      personListContainer.appendChild(newPersonContainer);
+      const notifyMeLabel = newPersonContainer.querySelector(".notify-me-label");
+      notifyMeLabel.addEventListener("click", handleNotifyMe);
     });
   </script>
 </body>
