@@ -316,3 +316,44 @@
 .upcoming-events .event-actions .get-notification-button {
   padding: 18px 30px;
 }
+
+/* Swiper Container with space for arrows */
+.upcoming-events .container {
+  position: relative;
+}
+
+.upcoming-events .mySwiper {
+  margin: 0 30px; /* Create space for arrows */
+  position: relative;
+}
+
+/* Custom Swiper Arrow Styles */
+.upcoming-events .swiper-button-next,
+.upcoming-events .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  margin-top: 0;
+}
+
+.upcoming-events .swiper-button-next img,
+.upcoming-events .swiper-button-prev img {
+  width: 70px;
+  height: 70px;
+}
+
+/* Hide default swiper arrows */
+.upcoming-events .swiper-button-next::after,
+.upcoming-events .swiper-button-prev::after {
+  display: none;
+}
+
+/* Position arrows in the margin space */
+.upcoming-events .swiper-button-next {
+  right: 20px; /* Position in the right margin */
+}
+
+.upcoming-events .swiper-button-prev {
+  left: 20px; /* Position in the left margin */
+}
