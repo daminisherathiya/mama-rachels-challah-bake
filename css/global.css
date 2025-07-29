@@ -1,0 +1,123 @@
+:root {
+  /* Main Brand Colors */
+  --color-dark-brown: #291F17;      /* Dark Brown */
+  --color-orange: #ce6018;          /* Burnt Orange */
+  --color-peach: #ffe4c3;           /* Light Peach */
+  --color-blue: #92A7CD;            /* Soft Blue */
+
+  /* RGB versions for opacity (without rgba wrapper) */
+  --color-dark-brown-rgb: 41, 31, 23;
+  --color-orange-rgb: 206, 96, 24;
+  --color-peach-rgb: 255, 228, 195;
+  --color-blue-rgb: 146, 167, 205;
+  --color-light-blue-rgb: 246, 249, 255;
+  
+  /* Additional Colors */
+  --color-cream: #fff3e4;           /* Light Cream */
+  --color-white: #ffffff;           /* White */
+  --color-gray: #B7B7B7;
+  --color-black: #000000;
+  --color-light-blue: #F6F9FF;
+  --color-dark-blue: #485B7E;
+  --color-light-orange: #FFF8EF;
+ }
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+  font-family: 'Eighties Comeback';
+  src: url('../fonts/EightiesComeback-Medium-Extra-Condensed.woff.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-size: 16px;
+  color: var(--color-black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1728px;
+  padding: 0 40px;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.button-blue {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  letter-spacing: 0.13em;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 15px;
+}
+
+.button-blue:hover {
+  background-color: rgba(var(--color-blue-rgb), 0.9);
+  color: var(--color-white);
+}
+
+.button-peach {
+  background-color: var(--color-peach);
+  color: var(--color-black);
+  letter-spacing: 0.13em;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 15px;
+  border: 1px solid var(--color-orange);
+}
+
+.button-peach:hover {
+  background-color: rgba(var(--color-peach-rgb), 0.8);
+  color: var(--color-black);
+}
+
+.button-dark-brown {
+  background-color: var(--color-dark-brown);
+  color: var(--color-white);
+  letter-spacing: 0.13em;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 15px;
+}
+
+.button-dark-brown:hover {
+  background-color: rgba(var(--color-dark-brown-rgb), 0.9);
+  color: var(--color-white);
+}
+
+.button-light-blue {
+  background-color: var(--color-light-blue);
+  color: var(--color-blue);
+  letter-spacing: 0.13em;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 15px;
+  border: 1px solid var(--color-blue);
+}
+
+.button-light-blue:hover {
+  background-color: rgba(var(--color-light-blue-rgb), 0.8);
+  color: var(--color-blue);
+}

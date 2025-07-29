@@ -1,0 +1,318 @@
+/* Navbar */
+.navbar-brand img {
+  max-width: 262px;
+}
+
+/* Challah Bake Banner */
+.challah-bake-banner {
+  background-image: url(../images/challah-bake-banner.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 640px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Registration Form */
+.registration-form {
+  background-image: url(../images/registration-form-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 188px 0 374px 0;
+  margin-top: -286px;
+}
+
+.registration-form-container {
+  background-color: var(--color-cream);
+  padding: 104px 116px;
+  border-radius: 25px;
+  display: inline-block;
+  max-width: 1062px;
+  position: relative;
+  z-index: 1;
+}
+
+.progress-steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 62px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-orange);
+  background-color: var(--color-peach);
+  border-radius: 80px;
+  padding: 8px 14px;
+  z-index: 1;
+}
+
+.step.active {
+  background-color: var(--color-orange);
+}
+
+.step-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-orange);
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 0.13em;
+}
+
+.step.active .step-text {
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.step-connector {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 3px;
+  background-image: repeating-linear-gradient(to right,
+      var(--color-orange),
+      var(--color-orange) 4px,
+      transparent 4px,
+      transparent 12px);
+}
+
+.registration-form-content input.form-control,
+.registration-form-content select {
+  border-radius: 15px;
+  padding: 26px 33px;
+  color: var(--color-black);
+}
+
+.registration-form-content select {
+  background-position: right 2rem center;
+  background-size: 21px 15px;
+}
+
+.registration-form-content input.form-control::placeholder {
+  color: var(--color-gray);
+}
+
+.registration-form-content .input-margine {
+  margin-bottom: 30px;
+}
+
+.registration-form-price {
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--color-orange);
+  font-family: 'Eighties Comeback', sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.registration-form-content .next-button {
+  padding: 22px 42px;
+}
+
+.registration-form-content .form-check .form-check-input {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  border: 1px solid var(--color-orange);
+  background-color: var(--color-peach);
+}
+
+.registration-form-content .form-check .form-check-input:checked {
+  background-color: var(--color-orange);
+}
+
+.registration-form-content .add-name-button {
+  padding: 21px 26px;
+}
+
+/* Challah Opportunity */
+.challah-opportunity {
+  background-color: var(--color-peach);
+  padding: 172px 0 351px 0;
+}
+
+.challah-opportunity .container {
+  max-width: 1278px;
+}
+
+.challah-opportunity h3 {
+  font-size: 80px;
+  font-weight: 500;
+  font-family: 'EightiesComeback';
+  letter-spacing: 0.02em;
+  color: var(--color-orange);
+}
+
+.challah-opportunity p {
+  margin-bottom: 20px;
+}
+
+.challah-opportunity .curly-arrow-down {
+  max-width: 256px;
+}
+
+.challah-opportunity .submit-name-button {
+  padding: 22px 42px;
+}
+
+/* About Mosdos Kever Rachel */
+.about-mosdos-kever-rachel {
+  background-color: var(--color-blue);
+  padding: 172px 0;
+}
+
+.about-mosdos-kever-rachel .container {
+  max-width: 1278px;
+}
+
+.about-mosdos-kever-rachel .about-mosdos-kever-rachel-container {
+  background-color: var(--color-light-blue);
+  padding: 123px 111px;
+  border-radius: 30px;
+  border: 3px solid var(--color-blue);
+  text-align: center;
+  margin-top: -417px;
+}
+
+.about-mosdos-kever-rachel h3 {
+  font-size: 80px;
+  font-weight: 500;
+  font-family: 'EightiesComeback';
+  letter-spacing: 0.02em;
+  color: var(--color-blue);
+  margin-bottom: 54px;
+
+}
+
+.about-mosdos-kever-rachel p {
+  margin-bottom: 20px;
+}
+
+.about-mosdos-kever-rachel .see-more-link {
+  color: var(--color-white);
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-mosdos-kever-rachel .about-mosdos-kever-rachel-image {
+  margin-top: 35px;
+}
+
+.about-mosdos-kever-rachel .see-more-link a {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  color: var(--color-white);
+}
+
+.about-mosdos-kever-rachel .see-more-link:hover a {
+  text-decoration: underline;
+}
+
+.stats-container {
+  margin-top: 80px;
+}
+
+.stats-container .stat-card {
+  background-color: var(--color-dark-blue);
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  flex: 1;
+}
+
+.stats-container .stat-number {
+  font-size: 126px;
+  font-weight: 500;
+  font-family: 'Eighties Comeback';
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  color: var(--color-blue);
+}
+
+.stats-container .stat-label {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+/* Upcoming Events */
+.upcoming-events {
+  background-color: var(--color-orange);
+  padding: 80px 0;
+}
+
+.upcoming-events .container {
+  max-width: 1278px;
+}
+
+.upcoming-events h2 {
+  text-align: center;
+  font-size: 74px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: var(--color-peach);
+  margin-bottom: 60px;
+  font-family: 'Eighties Comeback', sans-serif;
+}
+
+.event-card {
+  background-color: var(--color-light-orange);
+  border-radius: 24px;
+  padding: 40px 30px;
+  text-align: center;
+  border: 3px solid var(--color-peach);
+}
+
+.event-date {
+  font-size: 38.5px;
+  font-weight: 400;
+  color: var(--color-orange);
+  margin-bottom: 30px;
+}
+
+.event-info {
+  margin-bottom: 40px;
+}
+
+.event-lead {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-dark-brown);
+  margin-bottom: 8px;
+}
+
+.event-leader {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-dark-brown);
+}
+
+.event-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.upcoming-events .event-actions .submit-name-button {
+  padding: 18px 30px;
+}
+
+.upcoming-events .event-actions .get-notification-button {
+  padding: 18px 30px;
+}

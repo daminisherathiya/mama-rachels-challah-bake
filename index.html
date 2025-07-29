@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Mama rachel's challah bake</title>
+</head>
+
+<body>
+  <!-- <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 137px">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Mama rachel's challah bake"
+            class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header> -->
+  <main>
+    <section class="challah-bake-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="registration-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-center">
+              <div class="registration-form-container">
+                <div class="progress-steps">
+                  <div class="step-connector"></div>
+                  <div class="step active">
+                    <span class="step-text">PERSONAL INFO</span>
+                  </div>
+                  <div class="step">
+                    <span class="step-text">NAME TO BE MISPALLEL</span>
+                  </div>
+                  <div class="step">
+                    <span class="step-text">BILLING INFO</span>
+                  </div>
+                </div>
+                <div id="id-step-1" class="registration-form-content">
+                  <form>
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="input-margine">
+                          <input type="text" class="form-control border-0" id="first-name"
+                            aria-describedby="first-name-help" placeholder="First Name">
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="input-margine">
+                          <input type="text" class="form-control border-0" id="last-name"
+                            aria-describedby="last-name-help" placeholder="Last Name">
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="input-margine">
+                          <input type="text" class="form-control border-0 shadow-none" id="email"
+                            aria-describedby="email-help" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="d-flex justify-content-between align-items-end">
+                          <p class="registration-form-price">$180</p>
+                          <button class="btn button-blue next-button shadow-none" type="button" id="id-next-step-1">Next</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div id="id-step-2" class="registration-form-content d-none">
+                  <form>
+                    <div class="row align-items-center">
+                      <div class="col-12">
+                        <div class="input-margine input-group">
+                          <input type="text" class="form-control border-0 shadow-none" id="english-name"
+                            aria-describedby="english-name-help" placeholder="Yitzchok Ben Avrohom">
+                          <input type="text" class="form-control border-0 shadow-none text-end" id="hebrew-name"
+                          aria-describedby="hebrew-name-help" placeholder="יצחק בן אברהם">
+                        </div>
+                      </div>
+                      <div class="col-9">
+                        <div class="input-margine">
+                          <select class="form-select border-0 shadow-none" aria-label="Default select example">
+                            <option selected>Tefilah</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="input-margine">
+                          <div class="form-check d-flex align-items-center">
+                            <input class="form-check-input shadow-none" type="checkbox" name="flexRadioDefault"
+                              id="flexRadioDefault1">
+                            <label class="form-check-label ms-3" for="flexRadioDefault1">
+                              Notify the ???
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="d-flex justify-content-between align-items-end">
+                          <p class="registration-form-price">$180</p>
+                          <div class="d-flex align-items-center gap-3">
+                            <button class="btn add-name-button button-peach shadow-none"><img
+                                src="images/plus-circle.svg" alt="plus-circle" class="img-fluid me-3">Add Name
+                              +$50</button>
+                            <button class="btn button-blue next-button shadow-none" type="button">Next</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="challah-opportunity">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-6">
+            <h3 class="">This opportunity is thousands of years in the making!</h3>
+            <div class="d-flex justify-content-end">
+              <img src="images/curly-arrow-down.png" alt="curly-arrow-down" class="img-fluid curly-arrow-down">
+            </div>
+          </div>
+          <div class="col-6">
+            <p>For thousands of years, Klal Yisrael has been davening at Kever Rachel, beseeching our mother to
+              intercede for her children in galus. </p>
+            <p>For thousands of years, women have been davening during the time of hafrashas challah, one of women’s
+              special mitzvos, for everything they need for themselves and their families.</p>
+            <p>And now, for the first time, these special opportunities will converge.</p>
+            <p>Join thousands of women worldwide at Mama Rachel's Challah Bake, a celebration of tefillah and connection
+              livestreamed from one of the holiest sites in the world – Kever Rachel.</p>
+            <p class="font-medium">Send in your name and request, and your kvittel will be read aloud during the
+              upcoming challah bake at
+              Kever Rachel. Your support will fund Mosdos Kever Rachel’s many kollelim at the site, harnessing the power
+              of limud HaTorah, as well as tefillah during hafrashas challah.</p>
+            </p>
+            <button type="submit" class="btn button-blue submit-name-button shadow-none">Submit A Name</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-mosdos-kever-rachel">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="about-mosdos-kever-rachel-container">
+              <h3>About Mosdos Kever Rachel</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo suscipit turpis sed rutrum. Orci
+                varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque et
+                facilisis risus. In placerat lacus id mauris varius eleifend. Suspendisse orci ex, vestibulum quis leo
+                pharetra, ultricies convallis sapien. Sed tincidunt turpis consectetur, viverra augue id, tincidunt
+                erat. Nam non sollicitudin lorem. In lobortis faucibus eros, eget dictum est tempor id. Donec a libero
+                convallis, consequat ante ac, congue ligula.</p>
+              <p>Nam nunc velit, ullamcorper vitae consequat ac, scelerisque ut justo. Nulla viverra nisl id aliquet
+                aliquet. Sed lobortis leo non nulla efficitur mollis. Fusce scelerisque nibh nec rhoncus dignissim.
+                Etiam at bibendum enim, sed congue eros. In condimentum rutrum odio, id condimentum nunc feugiat eget.
+                Nunc tincidunt aliquet pharetra. Curabitur interdum ante ac interdum imperdiet. Suspendisse sollicitudin
+                metus ultrices, laoreet odio non, cursus erat. Curabitur erat dolor, rutrum quis ipsum eget, suscipit
+                ullamcorper nulla. Praesent vestibulum accumsan magna, vel pulvinar enim luctus eget. Nullam dapibus
+                blandit ante, quis ultrices diam maximus et.</p>
+              <div class="about-mosdos-kever-rachel-image row g-4">
+                <div class="col-6">
+                  <img src="images/study-hall-wide-view.png" alt="study-hall-wide-view" class="img-fluid">
+                </div>
+                <div class="col-6">
+                  <img src="images/library-room-learning.png" alt="library-room-learning" class="img-fluid">
+                </div>
+                <div class="col-6">
+                  <img src="images/crowded-study-session.png" alt="crowded-study-session" class="img-fluid">
+                </div>
+                <div class="col-6 position-relative">
+                  <div class="position-absolute top-0 start-0 see-more-link">
+                    <a href="#" class="text-white">See More</a>
+                  </div>
+                  <img src="images/hallway-study-group.png" alt="hallway-study-group" class="img-fluid">
+                </div>
+              </div>
+              <div class="stats-container row g-5">
+                <div class="col-4">
+                  <div class="stat-card">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">KOLELIM</div>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="stat-card">
+                    <div class="stat-number">24</div>
+                    <div class="stat-label">HOURS</div>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="stat-card">
+                    <div class="stat-number">106</div>
+                    <div class="stat-label">LOMDIM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <script>
+    const step1 = document.getElementById('id-step-1');
+    const step2 = document.getElementById('id-step-2');
+    const nextStep1 = document.getElementById('id-next-step-1');
+
+    nextStep1.addEventListener('click', (e) => {
+      e.preventDefault();
+      step1.classList.add('d-none');
+      step2.classList.remove('d-none');
+    });
+  </script>
+</body>
+
+</html>
