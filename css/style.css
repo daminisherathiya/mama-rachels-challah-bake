@@ -1,17 +1,119 @@
 /* Navbar */
+.navbar {
+  background-color: var(--color-peach);
+  color: var(--color-black);
+  padding: 30px 0;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--color-black);
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
 .navbar-brand img {
   max-width: 262px;
 }
 
+.navbar .countdown-timer {
+  margin-left: 82px;
+}
+
+.navbar .submit-name-button {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.82px;
+  text-transform: uppercase;
+  padding: 13.5px 24px;
+  margin-left: 15px;
+}
+
+.navbar .time-value {
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--color-orange);
+  font-family: 'EightiesComeback', sans-serif;
+  letter-spacing: 0.36px;
+  background-color: var(--color-cream);
+  border-radius: 10px;
+  padding: 0 12px;
+  margin-bottom: 6px;
+  min-width: 57px;
+}
+
+.navbar .time-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.navbar .time-separator {
+  color: var(--color-orange);
+  font-size: 36px;
+  font-weight: 500;
+  font-family: 'EightiesComeback', sans-serif;
+  letter-spacing: 0.36px;
+}
+
+.navbar .countdown-display {
+  gap: 3.7px;
+}
+
+.navbar .next-event-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-orange);
+  text-transform: uppercase;
+  margin-bottom: 1px;
+}
+
+.navbar .event-details {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.navbar .event-details > div {
+  margin-bottom: 1px;
+}
+
 /* Challah Bake Banner */
 .challah-bake-banner {
-  background-image: url(../images/challah-bake-banner.png);
+  background-image: url(../images/challah-bake-banner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 640px;
   position: relative;
   z-index: 1;
+  padding: 138px 0 191px 0;
+}
+
+.challah-bake-banner .container {
+  max-width: 1550px;
+}
+
+.challah-bake-banner h1 {
+  font-size: 100px;
+  font-weight: 500;
+  font-family: 'EightiesComeback';
+  color: var(--color-orange);
+  line-height: 104px;
+}
+
+.challah-bake-banner h1 > span {
+  font-family: 'EightiesComeback';
+}
+
+.challah-bake-banner p {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'EightiesComeback';
+  color: var(--color-peach);
+  font-style: italic;
+  line-height: 32px;
+  letter-spacing: 2px;
+  padding: 0 30px 0 44px;
 }
 
 /* Registration Form */
@@ -109,8 +211,9 @@
   font-size: 48px;
   font-weight: 500;
   color: var(--color-orange);
-  font-family: 'Eighties Comeback', sans-serif;
+  font-family: 'EightiesComeback', sans-serif;
   letter-spacing: 0.01em;
+  line-height: 53px;
 }
 
 .registration-form-content .next-button {
@@ -136,7 +239,7 @@
 /* Challah Opportunity */
 .challah-opportunity {
   background-color: var(--color-peach);
-  padding: 172px 0 351px 0;
+  padding: 157px 0 390px 0;
 }
 
 .challah-opportunity .container {
@@ -152,7 +255,12 @@
 }
 
 .challah-opportunity p {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+}
+
+.challah-opportunity .curly-arrow-down-container {
+  margin-top: 50px;
+  margin-right: 16px;
 }
 
 .challah-opportunity .curly-arrow-down {
@@ -160,13 +268,18 @@
 }
 
 .challah-opportunity .submit-name-button {
-  padding: 22px 42px;
+  padding: 22px 40px;
 }
+
+.challah-opportunity .challah-opportunity-content {
+  padding: 10px 0 0 20px;
+}
+
 
 /* About Mosdos Kever Rachel */
 .about-mosdos-kever-rachel {
   background-color: var(--color-blue);
-  padding: 172px 0;
+  padding: 172px 0 236px 0;
 }
 
 .about-mosdos-kever-rachel .container {
@@ -175,11 +288,15 @@
 
 .about-mosdos-kever-rachel .about-mosdos-kever-rachel-container {
   background-color: var(--color-light-blue);
-  padding: 123px 111px;
+  padding: 127px 128px;
   border-radius: 30px;
   border: 3px solid var(--color-blue);
   text-align: center;
   margin-top: -417px;
+}
+
+.about-mosdos-kever-rachel .about-mosdos-kever-rachel-content {
+  padding: 0 20px;
 }
 
 .about-mosdos-kever-rachel h3 {
@@ -188,7 +305,7 @@
   font-family: 'EightiesComeback';
   letter-spacing: 0.02em;
   color: var(--color-blue);
-  margin-bottom: 54px;
+  margin-bottom: 41px;
 
 }
 
@@ -224,13 +341,13 @@
 }
 
 .stats-container {
-  margin-top: 80px;
+  margin-top: 56px;
 }
 
 .stats-container .stat-card {
   background-color: var(--color-dark-blue);
   border-radius: 15px;
-  padding: 40px 30px;
+  padding: 47px 30px 53px 30px;
   text-align: center;
   flex: 1;
 }
@@ -238,7 +355,7 @@
 .stats-container .stat-number {
   font-size: 126px;
   font-weight: 500;
-  font-family: 'Eighties Comeback';
+  font-family: 'EightiesComeback';
   letter-spacing: 0.02em;
   margin-bottom: 10px;
   color: var(--color-blue);
@@ -255,11 +372,11 @@
 /* Upcoming Events */
 .upcoming-events {
   background-color: var(--color-orange);
-  padding: 80px 0;
+  padding: 185px 0;
 }
 
 .upcoming-events .container {
-  max-width: 1278px;
+  max-width: 1523px;
 }
 
 .upcoming-events h2 {
@@ -268,93 +385,101 @@
   letter-spacing: 0.02em;
   font-weight: 500;
   color: var(--color-peach);
-  margin-bottom: 60px;
-  font-family: 'Eighties Comeback', sans-serif;
+  margin-bottom: 68px;
+  font-family: 'EightiesComeback', sans-serif;
 }
 
-.event-card {
+.upcoming-events .event-card {
   background-color: var(--color-light-orange);
   border-radius: 24px;
-  padding: 40px 30px;
+  padding: 42px 44px;
   text-align: center;
   border: 3px solid var(--color-peach);
 }
 
-.event-date {
+.upcoming-events .event-date {
   font-size: 38.5px;
   font-weight: 400;
   color: var(--color-orange);
+  margin-bottom: 11px;
+}
+
+.upcoming-events .event-info {
   margin-bottom: 30px;
 }
 
-.event-info {
-  margin-bottom: 40px;
-}
-
-.event-lead {
+.upcoming-events .event-lead {
   font-size: 20px;
   font-weight: 600;
   color: var(--color-dark-brown);
-  margin-bottom: 8px;
 }
 
-.event-leader {
+.upcoming-events .event-leader {
   font-size: 20px;
   font-weight: 400;
   color: var(--color-dark-brown);
 }
 
-.event-actions {
+.upcoming-events .event-actions {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 13px;
 }
 
 .upcoming-events .event-actions .submit-name-button {
-  padding: 18px 30px;
+  padding: 18px 12px;
 }
 
 .upcoming-events .event-actions .get-notification-button {
-  padding: 18px 30px;
+  padding: 18px 12px;
 }
 
-/* Swiper Container with space for arrows */
 .upcoming-events .container {
   position: relative;
 }
 
 .upcoming-events .mySwiper {
-  margin: 0 30px; /* Create space for arrows */
+  margin: 0 100px;
   position: relative;
 }
 
-/* Custom Swiper Arrow Styles */
 .upcoming-events .swiper-button-next,
 .upcoming-events .swiper-button-prev {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
   margin-top: 0;
 }
 
-.upcoming-events .swiper-button-next img,
-.upcoming-events .swiper-button-prev img {
+.upcoming-events .swiper-button-next,
+.upcoming-events .swiper-button-prev {
   width: 70px;
   height: 70px;
 }
 
-/* Hide default swiper arrows */
 .upcoming-events .swiper-button-next::after,
 .upcoming-events .swiper-button-prev::after {
   display: none;
 }
 
-/* Position arrows in the margin space */
 .upcoming-events .swiper-button-next {
-  right: 20px; /* Position in the right margin */
+  right: 0;
 }
 
 .upcoming-events .swiper-button-prev {
-  left: 20px; /* Position in the left margin */
+  left: 0;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-dark-brown);
+  padding: 220px 0;
+}
+
+.footer .container {
+  max-width: 1330px;
+}
+
+.footer .footer-logo {
+  max-width: 363px;
 }

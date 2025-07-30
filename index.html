@@ -28,7 +28,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 137px">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Mama rachel's challah bake"
             class="img-fluid"></a>
@@ -36,36 +36,50 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="countdown-timer d-flex align-items-center">
+          <div class="countdown-display d-flex">
+            <div>
+              <div class="time-value" id="days">09</div>
+              <div class="time-label">DAYS</div>
+            </div>
+            <div class="time-separator">:</div>
+            <div>
+              <div class="time-value" id="hours">25</div>
+              <div class="time-label">HOURS</div>
+            </div>
+            <div class="time-separator">:</div>
+            <div>
+              <div class="time-value" id="minutes">11</div>
+              <div class="time-label">MINUTES</div>
+            </div>
+            <div class="time-separator">:</div>
+            <div>
+              <div class="time-value" id="seconds">36</div>
+              <div class="time-label">SECONDS</div>
+            </div>
+          </div>
+          <div class="ms-4">
+            <div class="next-event-label">Next Event</div>
+            <div class="event-details">
+              <div>Lead by: <span class="fw-normal">Sarah Imainu</span></div>
+              <div>Date: <span class="fw-normal">August 15</span></div>
+              <div>Time: <span class="fw-normal">12:30</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Watch Live</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link" href="#">About Mosdos Kever Rachel</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#">Upcoming Events</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          <button class="btn submit-name-button shadow-none rounded-pill">Submit A Name</button>
         </div>
       </div>
     </nav>
@@ -74,7 +88,15 @@
     <section class="challah-bake-banner">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-7">
+            <div class="row align-items-end g-0">
+              <div class="col-6">
+                <h1>The place, <span class="text-peach">the moment,</span> <span class="text-blue">the mitzvah.</span></h1>
+              </div>
+              <div class="col-5">
+                <p>Join thousands of women worldwide at Mama Rachel's Challah Bake, a celebration of tefillah and connection livestreamed from one of the holiest sites in the world—Kever Rachel.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -146,7 +168,7 @@
                       </div>
 
                       <div class="col-12">
-                        <div class="d-flex justify-content-between align-items-end">
+                        <div class="d-flex justify-content-between align-items-end mt-1">
                           <p class="registration-form-price">$180</p>
                           <div class="d-flex align-items-center gap-3">
                             <button id="id-add-name-button" class="btn add-name-button button-peach shadow-none"><img
@@ -182,7 +204,7 @@
                         </div>
                       </div>
                       <div class="col-12">
-                        <div class="d-flex justify-content-between align-items-end">
+                        <div class="d-flex justify-content-between align-items-end mt-1">
                           <p class="registration-form-price">$180</p>
                           <button class="btn button-blue next-button shadow-none" type="button"
                             id="id-step-2-next-button">Next</button>
@@ -209,24 +231,26 @@
         <div class="row g-5">
           <div class="col-6">
             <h3 class="">This opportunity is thousands of years in the making!</h3>
-            <div class="d-flex justify-content-end">
+            <div class="d-flex justify-content-end curly-arrow-down-container">
               <img src="images/curly-arrow-down.png" alt="curly-arrow-down" class="img-fluid curly-arrow-down">
             </div>
           </div>
           <div class="col-6">
-            <p>For thousands of years, Klal Yisrael has been davening at Kever Rachel, beseeching our mother to
-              intercede for her children in galus. </p>
-            <p>For thousands of years, women have been davening during the time of hafrashas challah, one of women’s
-              special mitzvos, for everything they need for themselves and their families.</p>
-            <p>And now, for the first time, these special opportunities will converge.</p>
-            <p>Join thousands of women worldwide at Mama Rachel's Challah Bake, a celebration of tefillah and connection
-              livestreamed from one of the holiest sites in the world – Kever Rachel.</p>
-            <p class="font-medium">Send in your name and request, and your kvittel will be read aloud during the
-              upcoming challah bake at
-              Kever Rachel. Your support will fund Mosdos Kever Rachel’s many kollelim at the site, harnessing the power
-              of limud HaTorah, as well as tefillah during hafrashas challah.</p>
-            </p>
-            <button type="submit" class="btn button-blue submit-name-button shadow-none">Submit A Name</button>
+            <div class="challah-opportunity-content">
+              <p>For thousands of years, Klal Yisrael has been davening at Kever Rachel, beseeching our mother to
+                intercede for her children in galus. </p>
+              <p>For thousands of years, women have been davening during the time of hafrashas challah, one of women’s
+                special mitzvos, for everything they need for themselves and their families.</p>
+              <p>And now, for the first time, these special opportunities will converge.</p>
+              <p>Join thousands of women worldwide at Mama Rachel's Challah Bake, a celebration of tefillah and connection
+                livestreamed from one of the holiest sites in the world – Kever Rachel.</p>
+              <p class="font-medium">Send in your name and request, and your kvittel will be read aloud during the
+                upcoming challah bake at
+                Kever Rachel. Your support will fund Mosdos Kever Rachel’s many kollelim at the site, harnessing the power
+                of limud HaTorah, as well as tefillah during hafrashas challah.
+              </p>
+              <button type="submit" class="btn button-blue submit-name-button shadow-none mt-2">Submit A Name</button>
+            </div>
           </div>
         </div>
       </div>
@@ -237,34 +261,36 @@
           <div class="col-12">
             <div class="about-mosdos-kever-rachel-container">
               <h3>About Mosdos Kever Rachel</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo suscipit turpis sed rutrum. Orci
-                varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque et
-                facilisis risus. In placerat lacus id mauris varius eleifend. Suspendisse orci ex, vestibulum quis leo
-                pharetra, ultricies convallis sapien. Sed tincidunt turpis consectetur, viverra augue id, tincidunt
-                erat. Nam non sollicitudin lorem. In lobortis faucibus eros, eget dictum est tempor id. Donec a libero
-                convallis, consequat ante ac, congue ligula.</p>
-              <p>Nam nunc velit, ullamcorper vitae consequat ac, scelerisque ut justo. Nulla viverra nisl id aliquet
-                aliquet. Sed lobortis leo non nulla efficitur mollis. Fusce scelerisque nibh nec rhoncus dignissim.
-                Etiam at bibendum enim, sed congue eros. In condimentum rutrum odio, id condimentum nunc feugiat eget.
-                Nunc tincidunt aliquet pharetra. Curabitur interdum ante ac interdum imperdiet. Suspendisse sollicitudin
-                metus ultrices, laoreet odio non, cursus erat. Curabitur erat dolor, rutrum quis ipsum eget, suscipit
-                ullamcorper nulla. Praesent vestibulum accumsan magna, vel pulvinar enim luctus eget. Nullam dapibus
-                blandit ante, quis ultrices diam maximus et.</p>
-              <div class="about-mosdos-kever-rachel-image row g-4">
-                <div class="col-6">
-                  <img src="images/study-hall-wide-view.png" alt="study-hall-wide-view" class="img-fluid">
-                </div>
-                <div class="col-6">
-                  <img src="images/library-room-learning.png" alt="library-room-learning" class="img-fluid">
-                </div>
-                <div class="col-6">
-                  <img src="images/crowded-study-session.png" alt="crowded-study-session" class="img-fluid">
-                </div>
-                <div class="col-6 position-relative">
-                  <div class="position-absolute top-0 start-0 see-more-link">
-                    <a href="#" class="text-white">See More</a>
+              <div class="about-mosdos-kever-rachel-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo suscipit turpis sed rutrum. Orci
+                  varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque et
+                  facilisis risus. In placerat lacus id mauris varius eleifend. Suspendisse orci ex, vestibulum quis leo
+                  pharetra, ultricies convallis sapien. Sed tincidunt turpis consectetur, viverra augue id, tincidunt
+                  erat. Nam non sollicitudin lorem. In lobortis faucibus eros, eget dictum est tempor id. Donec a libero
+                  convallis, consequat ante ac, congue ligula.</p>
+                <p>Nam nunc velit, ullamcorper vitae consequat ac, scelerisque ut justo. Nulla viverra nisl id aliquet
+                  aliquet. Sed lobortis leo non nulla efficitur mollis. Fusce scelerisque nibh nec rhoncus dignissim.
+                  Etiam at bibendum enim, sed congue eros. In condimentum rutrum odio, id condimentum nunc feugiat eget.
+                  Nunc tincidunt aliquet pharetra. Curabitur interdum ante ac interdum imperdiet. Suspendisse sollicitudin
+                  metus ultrices, laoreet odio non, cursus erat. Curabitur erat dolor, rutrum quis ipsum eget, suscipit
+                  ullamcorper nulla. Praesent vestibulum accumsan magna, vel pulvinar enim luctus eget. Nullam dapibus
+                  blandit ante, quis ultrices diam maximus et.</p>
+                <div class="about-mosdos-kever-rachel-image row g-4">
+                  <div class="col-6">
+                    <img src="images/study-hall-wide-view.png" alt="study-hall-wide-view" class="img-fluid">
                   </div>
-                  <img src="images/hallway-study-group.png" alt="hallway-study-group" class="img-fluid">
+                  <div class="col-6">
+                    <img src="images/library-room-learning.png" alt="library-room-learning" class="img-fluid">
+                  </div>
+                  <div class="col-6">
+                    <img src="images/crowded-study-session.png" alt="crowded-study-session" class="img-fluid">
+                  </div>
+                  <div class="col-6 position-relative">
+                    <div class="position-absolute top-0 start-0 see-more-link">
+                      <a href="#" class="text-white">See More</a>
+                    </div>
+                    <img src="images/hallway-study-group.png" alt="hallway-study-group" class="img-fluid">
+                  </div>
                 </div>
               </div>
               <div class="stats-container row g-5">
@@ -300,7 +326,7 @@
         <div class="row">
           <div class="col-12">
             <h2>Upcoming Events</h2>
-            <div class="swiper-container-wrapper">
+            <div class="swiper-container-wrapper position-relative">
               <div class="swiper-button-prev"><img src="images/left-swiper-arrow.svg" alt="arrow-left"
                   class="img-fluid"></div>
               <div class="swiper mySwiper">
@@ -380,6 +406,16 @@
     </section>
   </main>
 
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <img src="./images/footer-logo.svg" alt="footer-logo" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
@@ -391,7 +427,7 @@
   <script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 60,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
