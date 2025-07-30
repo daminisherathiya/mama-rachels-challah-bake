@@ -17,6 +17,8 @@
 
 .navbar .countdown-timer {
   margin-left: 82px;
+  column-gap: 16px;
+  row-gap: 10px;
 }
 
 .navbar .submit-name-button {
@@ -41,6 +43,7 @@
   padding: 0 12px;
   margin-bottom: 6px;
   min-width: 57px;
+  text-align: center;
 }
 
 .navbar .time-label {
@@ -74,7 +77,7 @@
   font-weight: 600;
 }
 
-.navbar .event-details > div {
+.navbar .event-details>div {
   margin-bottom: 1px;
 }
 
@@ -101,7 +104,7 @@
   line-height: 104px;
 }
 
-.challah-bake-banner h1 > span {
+.challah-bake-banner h1>span {
   font-family: 'EightiesComeback';
 }
 
@@ -482,4 +485,116 @@
 
 .footer .footer-logo {
   max-width: 363px;
+}
+
+@media (max-width: 1586px) {
+  .navbar .countdown-timer {
+    margin-left: 33px;
+  }
+
+  .navbar-brand img {
+    max-width: 212px;
+  }
+
+  .navbar .time-value {
+    font-size: 29px;
+    min-width: 50px;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    padding: 8px 13px;
+  }
+
+  .navbar .submit-name-button {
+    padding: 13.5px 16px;
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .navbar .countdown-timer {
+    margin-left: 0px;
+  }
+
+  .navbar .event-details {
+    column-gap: 8px;
+  }
+
+  .navbar-brand {
+    margin-right: 0px;
+  }
+
+  .navbar .container {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .watch-live-button {
+    padding: 5px 8px;
+    font-size: 7px;
+  }
+
+  .navbar {
+    padding: 18px 0;
+  }
+
+  .navbar-brand img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .countdown-timer {
+    max-width: 256px;
+  }
+  
+  .navbar .time-value {
+    font-size: 25px;
+    min-width: 40px;
+    padding: 0 6px;
+  }
+
+  .navbar .time-separator {
+    font-size: 25px;
+  }
+
+  .challah-bake-banner {
+    background-image: url(../images/challah-bake-banner-mobile.png);
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 22px;
+  }
+
+  .navbar .time-label,
+  .navbar .next-event-label,
+  .navbar .event-details {
+    font-size: 7px;
+  }
+
+  .navbar .event-details {
+    column-gap: 4px;
+  }
+
+  .navbar .countdown-timer {
+    max-width: 206px;
+  }
+}
+
+@media (max-width: 392px) {
+  .navbar .time-value {
+    font-size: 18px;
+    min-width: 30px;
+    padding: 0 5px;
+    border-radius: 5px;
+  }
+  .navbar .time-separator {
+    font-size: 18px;
+  }
+  .navbar .countdown-timer {
+    max-width: 180px;
+  }
 }
