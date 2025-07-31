@@ -255,7 +255,8 @@
 }
 
 .registration-form-content input.form-control,
-.registration-form-content select {
+.registration-form-content select,
+#notificationModal .form-control {
   border-radius: 15px;
   padding: 26px 33px;
   color: var(--color-black);
@@ -266,11 +267,13 @@
   background-size: 21px 15px;
 }
 
-.registration-form-content input.form-control::placeholder {
+.registration-form-content input.form-control::placeholder,
+#notificationModal .form-control::placeholder {
   color: var(--color-gray);
 }
 
-.registration-form-content .input-margine {
+.registration-form-content .input-margine,
+#notificationModal .input-margine {
   margin-bottom: 30px;
 }
 
@@ -401,10 +404,12 @@
   font-weight: 600;
   letter-spacing: 0.13em;
   color: var(--color-white);
+  transition: all 0.3s ease;
 }
 
 .about-mosdos-kever-rachel .see-more-link:hover a {
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .stats-container {
@@ -540,7 +545,12 @@
 /* Footer */
 .footer {
   background-color: var(--color-dark-brown);
-  padding: 220px 0;
+  padding-top: 120px;
+  padding-bottom: 0;
+}
+
+.footer img {
+  max-width: 200px;
 }
 
 .footer .container {
@@ -550,6 +560,102 @@
 .footer .footer-logo {
   max-width: 363px;
 }
+
+.footer .footer-links {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  font-family: 'EightiesComeback', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.footer .footer-links li {
+  padding: 10px 0;
+}
+
+.footer .footer-links li a {
+  color: var(--color-cream);
+  transition: all 0.3s ease;
+}
+
+.footer .footer-links li:hover {
+  text-decoration: underline;
+  color: var(--color-cream);
+  text-underline-offset: 4px;
+}
+
+.footer .footer-bottom {
+  border-top: 1px solid var(--color-cream);
+  padding: 20px 0;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  color: var(--color-cream);
+  font-family: 'EightiesComeback', sans-serif;
+}
+
+.footer .footer-bottom a {
+  color: var(--color-cream);
+  transition: all 0.3s ease;
+}
+
+.footer .footer-bottom a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+
+
+/* Modal */
+
+#notificationModal .modal-content {
+  background-color: var(--color-cream);
+  border-radius: 25px;
+  padding: 35px 39px;
+}
+
+#notificationModal h2 {
+  font-size: 51px;
+  font-weight: 500;
+  color: var(--color-orange);
+  font-family: 'EightiesComeback', sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 47px;
+  margin-bottom: 34px;
+}
+
+#notificationModal .modal-body {
+  padding: 0 75px;
+}
+
+#notificationModal p {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2.56px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+#notificationModal .modal-dialog {
+  max-width: 1062px;
+}
+
+#notificationModal .subscribe-button-container {
+  margin-top: 25px;
+  margin-bottom: 46px;
+}
+
+#notificationModal .subscribe-button-container button {
+  padding: 23px 33px;
+}
+
 
 @media (max-width: 1650px) {
 
@@ -640,7 +746,8 @@
   }
 
   .registration-form-content input.form-control,
-  .registration-form-content select {
+  .registration-form-content select,
+  #notificationModal .form-control {
     padding: 20px 27px;
   }
 
@@ -668,7 +775,8 @@
     height: 24px;
   }
 
-  .registration-form-content .input-margine {
+  .registration-form-content .input-margine,
+  #notificationModal .input-margine {
     margin-bottom: 25px;
   }
 
@@ -726,8 +834,7 @@
     padding-bottom: 196px;
   }
 
-  .upcoming-events,
-  .footer {
+  .upcoming-events {
     padding: 166px 0;
   }
 
@@ -834,7 +941,8 @@
     padding: 60px 65px;
   }
 
-  .registration-form-content .input-margine {
+  .registration-form-content .input-margine,
+  #notificationModal .input-margine {
     margin-bottom: 20px;
   }
 
@@ -879,8 +987,7 @@
     padding-bottom: 135px;
   }
 
-  .upcoming-events,
-  .footer {
+  .upcoming-events {
     padding: 115px 0;
   }
 
@@ -1035,7 +1142,7 @@
   }
 
   .footer {
-    padding: 100px 0;
+    padding-top: 60px;
   }
 
   .upcoming-events h2 {
@@ -1048,6 +1155,35 @@
 
   .upcoming-events .container {
     padding: 0;
+  }
+
+  #notificationModal .modal-body {
+    padding: 0 20px;
+  }
+
+
+  #notificationModal .close-button {
+    width: 35px;
+    height: 35px;
+  }
+
+  #notificationModal h2 {
+    font-size: 46px;
+    margin-bottom: 24px;
+  }
+
+  #notificationModal p {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  #notificationModal .subscribe-button-container {
+    margin-top: 18px;
+    margin-bottom: 34px;
+  }
+
+  #notificationModal .subscribe-button-container button {
+    padding: 18px 23px;
   }
 
 }
@@ -1091,7 +1227,8 @@
     background-size: 13px 13px;
   }
 
-  .registration-form-content .input-margine {
+  .registration-form-content .input-margine,
+  #notificationModal .input-margine {
     margin-bottom: 15px;
   }
 
@@ -1188,12 +1325,35 @@
   }
 
   .footer {
-    padding: 60px 0;
+    padding-top: 50px;
   }
 
   .upcoming-events h2 {
     font-size: 36px;
     margin-bottom: 30px;
+  }
+
+  #notificationModal .modal-body {
+    padding: 0;
+  }
+
+  #notificationModal h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  #notificationModal p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  #notificationModal .subscribe-button-container {
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  #notificationModal .subscribe-button-container button {
+    padding: 16px 23px;
   }
 }
 
@@ -1267,7 +1427,8 @@
   }
 
   .registration-form-content input.form-control,
-  .registration-form-content select {
+  .registration-form-content select,
+  #notificationModal input.form-control {
     padding: 16px 20px;
   }
 
@@ -1333,10 +1494,6 @@
     padding: 43px 0 60px 0;
   }
 
-  .footer {
-    padding: 60px 0;
-  }
-
   .upcoming-events .event-actions .submit-name-button {
     font-size: 12px;
     padding: 12px 10px;
@@ -1349,6 +1506,15 @@
 
   .upcoming-events .event-lead,
   .upcoming-events .event-leader {
+    font-size: 14px;
+  }
+
+  #notificationModal .modal-content {
+    padding: 25px;
+  }
+
+  #notificationModal .subscribe-button-container button {
+    padding: 14px 23px;
     font-size: 14px;
   }
 }
