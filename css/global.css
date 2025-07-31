@@ -1,9 +1,13 @@
 :root {
   /* Main Brand Colors */
-  --color-dark-brown: #291F17;      /* Dark Brown */
-  --color-orange: #ce6018;          /* Burnt Orange */
-  --color-peach: #ffe4c3;           /* Light Peach */
-  --color-blue: #92A7CD;            /* Soft Blue */
+  --color-dark-brown: #291F17;
+  /* Dark Brown */
+  --color-orange: #ce6018;
+  /* Burnt Orange */
+  --color-peach: #ffe4c3;
+  /* Light Peach */
+  --color-blue: #92A7CD;
+  /* Soft Blue */
 
   /* RGB versions for opacity (without rgba wrapper) */
   --color-dark-brown-rgb: 41, 31, 23;
@@ -11,16 +15,18 @@
   --color-peach-rgb: 255, 228, 195;
   --color-blue-rgb: 146, 167, 205;
   --color-light-blue-rgb: 246, 249, 255;
-  
+
   /* Additional Colors */
-  --color-cream: #fff3e4;           /* Light Cream */
-  --color-white: #ffffff;           /* White */
+  --color-cream: #fff3e4;
+  /* Light Cream */
+  --color-white: #ffffff;
+  /* White */
   --color-gray: #B7B7B7;
   --color-black: #000000;
   --color-light-blue: #F6F9FF;
   --color-dark-blue: #485B7E;
   --color-light-orange: #FFF8EF;
- }
+}
 
 * {
   font-family: 'Poppins', sans-serif;
@@ -29,7 +35,7 @@
 @font-face {
   font-family: 'EightiesComeback';
   src: url('../font/EightiesComeback-MedExtraCond.woff2') format('woff2'),
-       url('../font/EightiesComeback-MedExtraCond.woff') format('woff');
+    url('../font/EightiesComeback-MedExtraCond.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
@@ -39,7 +45,12 @@ body {
   color: var(--color-black);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 0;
 }
 

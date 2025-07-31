@@ -2,7 +2,7 @@
 .navbar {
   background-color: var(--color-peach);
   color: var(--color-black);
-  padding: 30px 0;
+  padding: 32px 0;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -13,12 +13,6 @@
 
 .navbar-brand img {
   max-width: 262px;
-}
-
-.navbar .countdown-timer {
-  margin-left: 82px;
-  column-gap: 16px;
-  row-gap: 10px;
 }
 
 .navbar .submit-name-button {
@@ -32,27 +26,58 @@
   margin-left: 15px;
 }
 
-.navbar .time-value {
-  font-size: 36px;
+/* Live Event Countdown Banner */
+.live-event-countdown-banner {
+  background-color: var(--color-black);
+  padding: 26px 0;
+  border-top: 10px solid var(--color-orange);
+  border-bottom: 10px solid var(--color-orange);
+}
+
+.live-event-countdown-banner .live-event-countdown-banner-content {
+  column-gap: 38px;
+}
+
+.live-event-countdown-banner .watch-live-text {
+  font-size: 38px;
   font-weight: 500;
   color: var(--color-orange);
   font-family: 'EightiesComeback', sans-serif;
-  letter-spacing: 0.36px;
+}
+
+.live-event-countdown-banner .play-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 16px;
+}
+
+.live-event-countdown-banner .countdown-timer {
+  column-gap: 49px;
+  row-gap: 10px;
+}
+
+.live-event-countdown-banner .time-value {
+  font-size: 43px;
+  letter-spacing: 0.433px;
+  font-weight: 500;
+  color: var(--color-orange);
+  font-family: 'EightiesComeback', sans-serif;
   background-color: var(--color-cream);
   border-radius: 10px;
-  padding: 0 12px;
+  padding: 0 8px;
   margin-bottom: 6px;
-  min-width: 57px;
+  min-width: 68px;
   text-align: center;
 }
 
-.navbar .time-label {
-  font-size: 10px;
+.live-event-countdown-banner .time-label {
+  font-size: 12px;
   text-transform: uppercase;
   text-align: center;
+  color: var(--color-cream);
 }
 
-.navbar .time-separator {
+.live-event-countdown-banner .time-separator {
   color: var(--color-orange);
   font-size: 36px;
   font-weight: 500;
@@ -60,25 +85,64 @@
   letter-spacing: 0.36px;
 }
 
-.navbar .countdown-display {
-  gap: 3.7px;
+.live-event-countdown-banner .countdown-display {
+  gap: 6px;
 }
 
-.navbar .next-event-label {
+.live-event-countdown-banner .event-details {
   font-size: 12px;
   font-weight: 600;
+}
+
+.live-event-countdown-banner .event-details .lead-by-label {
   color: var(--color-orange);
+  font-size: 38px;
+  font-weight: 500;
+  font-family: 'EightiesComeback', sans-serif;
+  padding-right: 10px;
+}
+
+.live-event-countdown-banner .event-details .lead-by-details {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.live-event-countdown-banner .event-details .lead-by-details>span {
+  color: var(--color-cream);
+  font-size: 38px;
+  font-family: 'EightiesComeback', sans-serif;
+  font-weight: 500;
+}
+
+.live-event-countdown-banner .event-details .lead-by-details .separator {
+  color: var(--color-orange);
+  font-size: 38px;
+  font-family: 'EightiesComeback', sans-serif;
+  font-weight: 500;
+}
+
+.live-event-countdown-banner .get-notification-button {
+  border: 3px solid var(--color-blue);
+  border-radius: 32px;
+  font-size: 16px;
+  padding: 15px 23px;
+  color: var(--color-white);
+  letter-spacing: 2.188px;
   text-transform: uppercase;
-  margin-bottom: 1px;
-}
-
-.navbar .event-details {
-  font-size: 12px;
   font-weight: 600;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.navbar .event-details>div {
-  margin-bottom: 1px;
+.live-event-countdown-banner .get-notification-button:hover {
+  background-color: var(--color-blue);
+}
+
+.live-event-countdown-banner .get-notification-button:hover img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(30deg) brightness(101%) contrast(103%);
 }
 
 /* Challah Bake Banner */
@@ -89,7 +153,7 @@
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
-  padding: 138px 0 191px 0;
+  padding: 136px 0 173px 0;
 }
 
 .challah-bake-banner .container {
@@ -129,7 +193,7 @@
   margin-top: -286px;
 }
 
-.registration-form-container {
+.registration-form .registration-form-container {
   background-color: var(--color-cream);
   padding: 104px 116px;
   border-radius: 25px;
@@ -140,7 +204,7 @@
   width: 100%;
 }
 
-.progress-steps {
+.registration-form .progress-steps {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -148,7 +212,7 @@
   margin-bottom: 62px;
 }
 
-.step {
+.registration-form .step {
   display: flex;
   align-items: center;
   border: 1px solid var(--color-orange);
@@ -158,11 +222,11 @@
   z-index: 1;
 }
 
-.step.active {
+.registration-form .step.active {
   background-color: var(--color-orange);
 }
 
-.step-text {
+.registration-form .step-text {
   font-size: 14px;
   font-weight: 500;
   color: var(--color-orange);
@@ -171,12 +235,12 @@
   letter-spacing: 0.13em;
 }
 
-.step.active .step-text {
+.registration-form .step.active .step-text {
   color: var(--color-white);
   font-weight: 600;
 }
 
-.step-connector {
+.registration-form .step-connector {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -487,18 +551,57 @@
   max-width: 363px;
 }
 
+@media (max-width: 1650px) {
+
+  .live-event-countdown-banner .watch-live-text,
+  .live-event-countdown-banner .event-details .lead-by-label,
+  .live-event-countdown-banner .event-details .lead-by-details>span,
+  .live-event-countdown-banner .event-details .lead-by-details .separator {
+    font-size: 30px;
+  }
+
+  .live-event-countdown-banner .time-value {
+    font-size: 34px;
+    min-width: 55px;
+  }
+}
+
 @media (max-width: 1586px) {
-  .navbar .countdown-timer {
-    margin-left: 33px;
+
+  .live-event-countdown-banner .live-event-countdown-banner-content,
+  .live-event-countdown-banner .countdown-timer {
+    column-gap: 20px;
+  }
+
+  .live-event-countdown-banner .play-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  .navbar {
+    padding: 26px 0;
   }
 
   .navbar-brand img {
     max-width: 212px;
   }
 
-  .navbar .time-value {
-    font-size: 29px;
-    min-width: 50px;
+  .live-event-countdown-banner .event-details .lead-by-details {
+    gap: 10px;
+  }
+
+  .live-event-countdown-banner {
+    padding: 20px 0;
+  }
+
+  .live-event-countdown-banner .time-label {
+    font-size: 10px;
+  }
+
+  .live-event-countdown-banner .get-notification-button {
+    font-size: 14px;
+    padding: 10px 16px;
   }
 
   .navbar .navbar-nav .nav-link {
@@ -509,11 +612,192 @@
     padding: 13.5px 16px;
     margin-left: 8px;
   }
+
+  .challah-bake-banner h1 {
+    font-size: 83px;
+    line-height: 90px;
+  }
+
+  .challah-bake-banner p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .challah-bake-banner .watch-live-image {
+    max-width: 180px;
+  }
+
+  .challah-bake-banner p {
+    padding-right: 0;
+  }
+
+  .registration-form {
+    padding-bottom: 311px;
+  }
+
+  .registration-form .registration-form-container {
+    padding: 84px 93px;
+  }
+
+  .registration-form-content input.form-control,
+  .registration-form-content select {
+    padding: 20px 27px;
+  }
+
+  .registration-form-price {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .registration-form-content .add-name-button {
+    padding: 16px 22px;
+    font-size: 16px;
+  }
+
+  .registration-form-content .add-name-button img {
+    width: 20px;
+  }
+
+  .registration-form-content .next-button {
+    padding: 16px 32px;
+    font-size: 16px;
+  }
+
+  .registration-form-content .form-check .form-check-input {
+    width: 24px;
+    height: 24px;
+  }
+
+  .registration-form-content .input-margine {
+    margin-bottom: 25px;
+  }
+
+  .challah-opportunity h3 {
+    font-size: 66px;
+  }
+
+  .challah-opportunity .curly-arrow-down {
+    max-width: 213px;
+  }
+
+  .challah-opportunity .submit-name-button {
+    padding: 16px 22px;
+    font-size: 16px;
+  }
+
+  .challah-opportunity {
+    padding-top: 130px;
+    padding-bottom: 350px;
+  }
+
+  .about-mosdos-kever-rachel .about-mosdos-kever-rachel-container {
+    padding: 105px;
+  }
+
+  .about-mosdos-kever-rachel h3 {
+    font-size: 66px;
+  }
+
+  .about-mosdos-kever-rachel h3 {
+    margin-bottom: 34px;
+  }
+
+  .about-mosdos-kever-rachel .see-more-link a {
+    font-size: 16px;
+  }
+
+  .stats-container {
+    margin-top: 46px;
+  }
+
+  .stats-container .stat-number {
+    font-size: 104px;
+  }
+
+  .stats-container .stat-label {
+    font-size: 18px;
+  }
+
+  .about-mosdos-kever-rachel .about-mosdos-kever-rachel-container {
+    margin-top: -390px;
+  }
+
+  .about-mosdos-kever-rachel {
+    padding-bottom: 196px;
+  }
+
+  .upcoming-events,
+  .footer {
+    padding: 166px 0;
+  }
+
+  .upcoming-events h2 {
+    font-size: 61px;
+  }
+
+  .upcoming-events .event-card {
+    padding: 34px 36px;
+  }
+
+  .upcoming-events .event-date {
+    font-size: 32px;
+  }
+
+  .upcoming-events .event-lead,
+  .upcoming-events .event-leader {
+    font-size: 18px;
+  }
+
+  .upcoming-events .event-actions .submit-name-button,
+  .upcoming-events .event-actions .get-notification-button {
+    padding: 16px 12px;
+    font-size: 14px;
+  }
+
+  .upcoming-events .swiper-button-next,
+  .upcoming-events .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+  }
+
+  .upcoming-events .event-info {
+    margin-bottom: 25px;
+  }
+
+  .upcoming-events .mySwiper {
+    margin: 0 80px;
+  }
 }
 
 @media (max-width: 1400px) {
-  .navbar .countdown-timer {
+  .live-event-countdown-banner .countdown-timer {
     margin-left: 0px;
+  }
+
+  .live-event-countdown-banner .time-value {
+    font-size: 26px;
+    min-width: 43px;
+  }
+
+  .live-event-countdown-banner .time-label {
+    font-size: 7px;
+  }
+
+  .live-event-countdown-banner .play-icon {
+    width: 20px;
+    margin-right: 6px;
+  }
+
+  .live-event-countdown-banner .watch-live-text,
+  .live-event-countdown-banner .event-details .lead-by-label,
+  .live-event-countdown-banner .event-details .lead-by-details>span,
+  .live-event-countdown-banner .event-details .lead-by-details .separator {
+    font-size: 22px;
+  }
+
+  .live-event-countdown-banner .get-notification-button {
+    font-size: 12px;
+    padding: 10px 12px;
   }
 
   .navbar .event-details {
@@ -527,9 +811,121 @@
   .navbar .container {
     column-gap: 20px;
   }
+
+  .challah-bake-banner h1 {
+    font-size: 57px;
+    line-height: 61px;
+  }
+
+  .challah-bake-banner p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .challah-bake-banner .watch-live-image {
+    max-width: 150px;
+  }
+
+  .registration-form {
+    padding-bottom: 214px;
+  }
+
+  .registration-form .registration-form-container {
+    padding: 60px 65px;
+  }
+
+  .registration-form-content .input-margine {
+    margin-bottom: 20px;
+  }
+
+  .challah-opportunity h3 {
+    font-size: 50px;
+  }
+
+  .challah-opportunity .curly-arrow-down {
+    max-width: 170px;
+  }
+
+  .challah-opportunity {
+    padding-top: 90px;
+    padding-bottom: 320px;
+  }
+
+  .about-mosdos-kever-rachel .about-mosdos-kever-rachel-container {
+    padding: 72px;
+  }
+
+  .about-mosdos-kever-rachel h3 {
+    font-size: 46px;
+  }
+
+  .about-mosdos-kever-rachel h3 {
+    margin-bottom: 24px;
+  }
+
+  .stats-container {
+    margin-top: 34px;
+  }
+
+  .stats-container .stat-number {
+    font-size: 72px;
+  }
+
+  .stats-container .stat-label {
+    font-size: 16px;
+  }
+
+  .about-mosdos-kever-rachel {
+    padding-bottom: 135px;
+  }
+
+  .upcoming-events,
+  .footer {
+    padding: 115px 0;
+  }
+
+  .upcoming-events h2 {
+    font-size: 51px;
+    margin-bottom: 40px;
+  }
+
+  .upcoming-events .event-card {
+    padding: 24px 21px;
+  }
+
+  .upcoming-events .event-date {
+    font-size: 24px;
+  }
+
+  .upcoming-events .event-lead,
+  .upcoming-events .event-leader {
+    font-size: 16px;
+  }
+
+  .upcoming-events .swiper-button-next,
+  .upcoming-events .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+
+  .upcoming-events .event-info {
+    margin-bottom: 20px;
+  }
+
+  .upcoming-events .mySwiper {
+    margin: 0 55px;
+  }
+
+  .upcoming-events .event-actions .get-notification-button {
+    letter-spacing: 0.5px;
+  }
+
+  .upcoming-events .event-actions .get-notification-button img {
+    width: 20px;
+  }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .navbar .watch-live-button {
     padding: 5px 8px;
     font-size: 7px;
@@ -539,62 +935,490 @@
     padding: 18px 0;
   }
 
-  .navbar-brand img {
-    max-width: 100%;
+  .navbar-collapse {
+    padding: 10px 0;
   }
+
+  .navbar .submit-name-button {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .challah-bake-banner h1 {
+    font-size: 44px;
+    line-height: 48px;
+  }
+
+  .challah-bake-banner p {
+    padding: 10px 0 0 0;
+  }
+
+
+  .registration-form {
+    padding-bottom: 166px;
+  }
+
+  .registration-form .registration-form-container {
+    padding: 45px 50px;
+  }
+
+  .registration-form-content .form-check .form-check-input {
+    width: 20px;
+    height: 20px;
+  }
+
+  .registration-form-content .notify-me-label span {
+    font-size: 14px;
+  }
+
+  .registration-form .step-text {
+    font-size: 12px;
+  }
+
+  .challah-opportunity .challah-opportunity-content {
+    padding-left: 0;
+    padding-top: 25px;
+  }
+
+  .challah-opportunity .submit-name-button:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/curly-arrow-down.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .challah-opportunity {
+    padding-top: 69px;
+    padding-bottom: 300px;
+  }
+
+  .about-mosdos-kever-rachel .about-mosdos-kever-rachel-container {
+    padding: 56px;
+  }
+
+  .about-mosdos-kever-rachel h3 {
+    font-size: 40px;
+  }
+
+  .about-mosdos-kever-rachel h3 {
+    margin-bottom: 20px;
+  }
+
+  .about-mosdos-kever-rachel .see-more-link a {
+    font-size: 14px;
+  }
+
+  .stats-container {
+    margin-top: 24px;
+  }
+
+  .stats-container .stat-number {
+    font-size: 56px;
+  }
+
+  .stats-container .stat-label {
+    font-size: 14px;
+  }
+
+  .about-mosdos-kever-rachel {
+    padding-bottom: 100px;
+  }
+
+  .upcoming-events {
+    padding: 80px 0 100px 0;
+  }
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .upcoming-events h2 {
+    font-size: 41px;
+  }
+
+  .upcoming-events .mySwiper {
+    margin: 0;
+  }
+
+  .upcoming-events .container {
+    padding: 0;
+  }
+
 }
 
-@media (max-width: 768px) {
-  .navbar .countdown-timer {
+@media (max-width: 767px) {
+
+  .live-event-countdown-banner .countdown-timer {
     max-width: 256px;
   }
-  
-  .navbar .time-value {
+
+  .live-event-countdown-banner .time-value {
     font-size: 25px;
     min-width: 40px;
     padding: 0 6px;
   }
 
-  .navbar .time-separator {
+  .live-event-countdown-banner .time-separator {
     font-size: 25px;
   }
 
   .challah-bake-banner {
     background-image: url(../images/challah-bake-banner-mobile.png);
+    background-position: top center;
+  }
+
+  .challah-bake-banner .watch-live-image {
+    max-width: 100px;
+  }
+
+  .live-event-countdown-banner .get-notification-button {
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .registration-form {
+    padding-bottom: 124px;
+  }
+
+  .registration-form-content select {
+    background-position: right 1.5rem center;
+    background-size: 13px 13px;
+  }
+
+  .registration-form-content .input-margine {
+    margin-bottom: 15px;
+  }
+
+  .registration-form-content .add-name-button {
+    width: 100%;
+  }
+
+  .registration-form .progress-steps {
+    margin-bottom: 40px;
+  }
+
+  .registration-form .step-text {
+    font-size: 10px;
+    letter-spacing: 0.964px;
+    font-weight: 500;
+  }
+
+  .registration-form .registration-form-container {
+    padding: 30px;
+  }
+
+  .registration-form .step {
+    padding: 6px 10px;
+  }
+
+  .registration-form-price {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .challah-opportunity h3 {
+    font-size: 48px;
+  }
+
+  .challah-opportunity p,
+  .about-mosdos-kever-rachel p {
+    margin-bottom: 16px;
+    font-size: 14px;
+    word-break: break-all;
+    text-align: left;
+  }
+
+  .challah-opportunity {
+    padding-top: 52px;
+    padding-bottom: 200px;
+  }
+
+  .about-mosdos-kever-rachel .about-mosdos-kever-rachel-container {
+    padding: 42px;
+  }
+
+  .about-mosdos-kever-rachel h3 {
+    font-size: 36px;
+  }
+
+  .about-mosdos-kever-rachel .about-mosdos-kever-rachel-content {
+    padding: 0 6px;
+  }
+
+  .about-mosdos-kever-rachel h3 {
+    margin-bottom: 13px;
+  }
+
+  .about-mosdos-kever-rachel .see-more-link a {
+    font-size: 12px;
+  }
+
+  .stats-container .stat-number {
+    font-size: 41px;
+  }
+
+  .stats-container .stat-label {
+    font-size: 12px;
+  }
+
+  .stats-container .stat-card {
+    padding: 30px 10px 35px 10px;
+  }
+
+  .about-mosdos-kever-rachel .about-mosdos-kever-rachel-image {
+    margin-top: 20px;
+  }
+
+  .about-mosdos-kever-rachel .about-mosdos-kever-rachel-container {
+    margin-top: -300px;
+  }
+
+  .about-mosdos-kever-rachel {
+    padding-bottom: 80px;
+  }
+
+  .upcoming-events {
+    padding: 60px 0 80px 0;
+  }
+
+  .footer {
+    padding: 60px 0;
+  }
+
+  .upcoming-events h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
+
+  .live-event-countdown-banner .watch-live-text,
+  .live-event-countdown-banner .event-details .lead-by-label,
+  .live-event-countdown-banner .event-details .lead-by-details>span,
+  .live-event-countdown-banner .event-details .lead-by-details .separator {
+    font-size: 18px;
+  }
+
+  .navbar-brand img {
+    max-width: 180px;
+  }
+
+  .live-event-countdown-banner {
+    border-top: 7px solid var(--color-orange);
+    border-bottom: 7px solid var(--color-orange);
+  }
+
+  .live-event-countdown-banner .get-notification-button img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .live-event-countdown-banner .get-notification-button {
+    padding: 6px;
+    border-width: 2px;
+  }
+
   .container {
     padding: 0 22px;
   }
 
-  .navbar .time-label,
-  .navbar .next-event-label,
-  .navbar .event-details {
+  .live-event-countdown-banner .time-label,
+  .live-event-countdown-banner .event-details {
     font-size: 7px;
   }
 
-  .navbar .event-details {
+  .live-event-countdown-banner .event-details {
     column-gap: 4px;
   }
 
-  .navbar .countdown-timer {
+  .live-event-countdown-banner .countdown-timer {
     max-width: 206px;
+  }
+
+  .registration-form {
+    padding-bottom: 70px;
+  }
+
+  .registration-form-content .next-button {
+    width: 100%;
+  }
+
+  .registration-form .step-text {
+    font-size: 7px;
+  }
+
+  .registration-form .step {
+    padding: 4px 10px;
+  }
+
+  .registration-form .registration-form-container {
+    padding: 32px 25px;
+  }
+
+  .registration-form .progress-steps {
+    margin-bottom: 25px;
+  }
+
+  .registration-form-content input.form-control,
+  .registration-form-content select {
+    padding: 16px 20px;
+  }
+
+  .registration-form-content .add-name-button,
+  .registration-form-content .next-button,
+  .challah-opportunity .submit-name-button {
+    padding: 14px 14px;
+  }
+
+  .challah-opportunity h3 {
+    font-size: 44px;
+  }
+
+  .challah-bake-banner {
+    padding: 136px 0 157px 0;
+  }
+
+  .challah-opportunity .submit-name-button:before {
+    left: -22px;
+    top: -10px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .challah-opportunity .submit-name-button {
+    font-size: 14px;
+  }
+
+  .challah-opportunity {
+    padding-top: 36px;
+    padding-bottom: 190px;
+  }
+
+  .about-mosdos-kever-rachel .about-mosdos-kever-rachel-container {
+    padding: 32px;
+  }
+
+  .about-mosdos-kever-rachel .see-more-link a {
+    font-size: 10px;
+  }
+
+  .stats-container .stat-number {
+    font-size: 39px;
+  }
+
+  .stats-container .stat-label {
+    font-size: 10px;
+  }
+
+  .stats-container .stat-card {
+    padding: 20px 10px 25px 10px;
+  }
+
+  .stats-container .stat-number {
+    margin-bottom: 0;
+  }
+
+  .about-mosdos-kever-rachel {
+    padding-bottom: 53px;
+  }
+
+  .upcoming-events {
+    padding: 43px 0 60px 0;
+  }
+
+  .footer {
+    padding: 60px 0;
+  }
+
+  .upcoming-events .event-actions .submit-name-button {
+    font-size: 12px;
+    padding: 12px 10px;
+  }
+
+  .upcoming-events .event-actions .get-notification-button {
+    font-size: 12px;
+    padding: 11px 10px;
+  }
+
+  .upcoming-events .event-lead,
+  .upcoming-events .event-leader {
+    font-size: 14px;
   }
 }
 
 @media (max-width: 392px) {
-  .navbar .time-value {
+
+  .live-event-countdown-banner .watch-live-text,
+  .live-event-countdown-banner .event-details .lead-by-label,
+  .live-event-countdown-banner .event-details .lead-by-details>span,
+  .live-event-countdown-banner .event-details .lead-by-details .separator {
+    font-size: 16px;
+  }
+
+  .live-event-countdown-banner .event-details .lead-by-details {
+    gap: 4px;
+  }
+
+  .challah-bake-banner .watch-live-image {
+    max-width: 80px;
+  }
+
+  .navbar-brand img {
+    max-width: 160px;
+  }
+
+  .registration-form {
+    padding-bottom: 60px;
+  }
+
+  .live-event-countdown-banner .time-value {
     font-size: 18px;
     min-width: 30px;
     padding: 0 5px;
     border-radius: 5px;
   }
-  .navbar .time-separator {
+
+  .live-event-countdown-banner .time-separator {
     font-size: 18px;
   }
-  .navbar .countdown-timer {
+
+  .live-event-countdown-banner .countdown-timer {
     max-width: 180px;
+  }
+
+  .challah-opportunity .submit-name-button:before {
+    left: -52px;
+    top: -20px;
+  }
+
+  .challah-opportunity h3 {
+    font-size: 40px;
+  }
+
+  .about-mosdos-kever-rachel .about-mosdos-kever-rachel-container {
+    padding: 25px;
+  }
+
+  .about-mosdos-kever-rachel .about-mosdos-kever-rachel-content {
+    padding: 0;
+  }
+
+  .stats-container .stat-label {
+    font-size: 8px;
+  }
+
+  .stats-container .stat-card {
+    padding: 10px 10px 20px 10px;
+  }
+
+  .stats-container .stat-number {
+    font-size: 34px;
   }
 }
