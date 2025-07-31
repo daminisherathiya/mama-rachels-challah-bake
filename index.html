@@ -116,7 +116,8 @@
                 <h1 class="flex-shrink-0">The place, <span class="text-peach d-block">the moment,</span> <span
                     class="text-blue d-block">the mitzvah.</span></h1>
                 <div class="d-sm-none">
-                  <img src="./images/watch-live.svg" alt="watch live" class="img-fluid watch-live-image">
+                  <a href="#"><img src="./images/watch-live.svg" alt="watch live"
+                      class="img-fluid watch-live-image"></a>
                 </div>
               </div>
               <p>Join thousands of women worldwide at Mama Rachel's Challah Bake, a celebration of tefillah and
@@ -124,7 +125,7 @@
             </div>
           </div>
           <div class="col-3 text-end d-none d-sm-block">
-            <img src="./images/watch-live.svg" alt="watch live" class="img-fluid watch-live-image">
+            <a href="#"><img src="./images/watch-live.svg" alt="watch live" class="img-fluid watch-live-image"></a>
           </div>
         </div>
       </div>
@@ -135,19 +136,24 @@
           <div class="col-12">
             <div class="d-flex justify-content-center">
               <div class="registration-form-container">
-                <div class="progress-steps">
+                <div class="progress-steps row g-0 justify-content-between">
                   <div class="step-connector"></div>
-                  <div id="id-step-1-tab" class="step active cursor-pointer" onclick="handleTabClick('step1')">
-                    <span class="step-text">NAME TO BE MISPALLEL</span>
+                  <div class="col-auto col-xl-4 justify-content-start d-flex">
+                    <div id="id-step-1-tab" class="step active cursor-pointer" onclick="handleTabClick('step1')">
+                      <span class="step-text">NAME TO BE MISPALLEL</span>
+                    </div>
                   </div>
-                  <div id="id-step-2-tab" class="step cursor-pointer" onclick="handleTabClick('step2')">
-                    <span class="step-text">PERSONAL INFO</span>
+                  <div class="col-auto col-xl-4 justify-content-center d-flex">
+                    <div id="id-step-2-tab" class="step cursor-pointer" onclick="handleTabClick('step2')">
+                      <span class="step-text">PERSONAL INFO</span>
+                    </div>
                   </div>
-                  <div id="id-step-3-tab" class="step cursor-pointer" onclick="handleTabClick('step3')">
-                    <span class="step-text">BILLING INFO</span>
+                  <div class="col-auto col-xl-4 justify-content-end d-flex">
+                    <div id="id-step-3-tab" class="step cursor-pointer" onclick="handleTabClick('step3')">
+                      <span class="step-text">BILLING INFO</span>
+                    </div>
                   </div>
                 </div>
-
                 <div id="id-step-1-content" class="registration-form-content">
                   <form>
                     <div class="row">
@@ -447,16 +453,16 @@
             <ul class="footer-links">
               <li><a href="#">About Us</a></li>
               <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Tax ID : 123</a></li>
+              <li><a href="#">Tax ID: 123</a></li>
             </ul>
           </div>
         </div>
         <div class="col-6 text-end">
-          <img src="./images/footer-logo.svg" alt="footer-logo" class="img-fluid">
+          <a href="#"><img src="./images/footer-logo.svg" alt="footer-logo" class="img-fluid"></a></a>
         </div>
         <div class="col-12">
           <div class="footer-bottom">
-            <p>© 2025 / Mosdos Kever Rachel. All rights reserved | Website by
+            <p>© <span id="current-year">2025</span> / Mosdos Kever Rachel. All rights reserved | Website by
               <a href="https://webarysites.com/" target="_blank">Webary</a>
             </p>
           </div>
@@ -468,7 +474,7 @@
   <!-- Modal -->
   <div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="notificationModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered mx-sm-3">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header p-0 border-0">
           <button type="button" class="btn shadow-none p-0 ms-auto close-button" data-bs-dismiss="modal"
@@ -517,45 +523,61 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      centeredSlides: true,
-      initialSlide: 1,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 1.5,
-          spaceBetween: 14,
+    document.addEventListener('DOMContentLoaded', function() {
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        initialSlide: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-        432: {
-          slidesPerView: 1.8,
-          spaceBetween: 16,
-        },
-        576: {
-          slidesPerView: 2.2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2.5,
-          spaceBetween: 20,
-        },
-        992: {
-          slidesPerView: 3,
-          spaceBetween: 22,
-          centeredSlides: false,
-          initialSlide: 0,
-        },
-        1400: {
-          spaceBetween: 30,
-        },
-        1586: {
-          spaceBetween: 60,
-        },
-      }
+        breakpoints: {
+          0: {
+            slidesPerView: 1.5,
+            spaceBetween: 14,
+            centeredSlides: true,
+            initialSlide: 1,
+          },
+          432: {
+            slidesPerView: 1.8,
+            spaceBetween: 16,
+            centeredSlides: true,
+            initialSlide: 1,
+          },
+          576: {
+            slidesPerView: 2.2,
+            spaceBetween: 20,
+            centeredSlides: true,
+            initialSlide: 1,
+          },
+          768: {
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+            centeredSlides: true,
+            initialSlide: 1,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 22,
+            centeredSlides: false,
+            initialSlide: 0,
+          },
+          1400: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: false,
+            initialSlide: 0,
+          },
+          1586: {
+            slidesPerView: 3,
+            spaceBetween: 60,
+            centeredSlides: false,
+            initialSlide: 0,
+          },
+        }
+      });
     });
   </script>
 
@@ -650,6 +672,10 @@
       const notifyMeLabel = newPersonContainer.querySelector(".notify-me-label");
       notifyMeLabel.addEventListener("click", handleNotifyMe);
     });
+  </script>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
   </script>
 </body>
 

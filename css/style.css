@@ -205,20 +205,18 @@
 }
 
 .registration-form .progress-steps {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: relative;
   margin-bottom: 62px;
 }
 
 .registration-form .step {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   border: 1px solid var(--color-orange);
   background-color: var(--color-peach);
   border-radius: 80px;
   padding: 8px 14px;
+  position: relative;
   z-index: 1;
 }
 
@@ -550,7 +548,7 @@
 }
 
 .footer img {
-  max-width: 200px;
+  width: 200px;
 }
 
 .footer .container {
@@ -574,6 +572,10 @@
 
 .footer .footer-links li {
   padding: 10px 0;
+}
+
+.footer .footer-links li:last-child {
+  padding-bottom: 0;
 }
 
 .footer .footer-links li a {
@@ -1032,6 +1034,14 @@
   }
 }
 
+@media (max-width: 1090px) {
+  #notificationModal .modal-dialog {
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+}
+
+
 @media (max-width: 991px) {
   .navbar .watch-live-button {
     padding: 5px 8px;
@@ -1042,8 +1052,12 @@
     padding: 18px 0;
   }
 
-  .navbar-collapse {
-    padding: 10px 0;
+  .navbar-nav {
+    padding-top: 10px;
+  }
+
+  .navbar .submit-name-button {
+    margin-bottom: 10px;
   }
 
   .navbar .submit-name-button {
@@ -1186,6 +1200,14 @@
     padding: 18px 23px;
   }
 
+  .footer .footer-bottom {
+    font-size: 12px;
+  }
+
+  .footer .footer-links li a {
+    font-size: 14px;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -1326,6 +1348,10 @@
 
   .footer {
     padding-top: 50px;
+  }
+
+  .footer .footer-bottom {
+    font-size: 10px;
   }
 
   .upcoming-events h2 {
@@ -1587,4 +1613,23 @@
   .stats-container .stat-number {
     font-size: 34px;
   }
+
+  .registration-form .step-connector {
+    display: none;
+  }
+
+  .registration-form .progress-steps {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .registration-form .step {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .registration-form .step-text {
+    font-size: 10px;
+  }
+  
 }
